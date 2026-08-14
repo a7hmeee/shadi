@@ -1,0 +1,23 @@
+﻿<?php
+
+namespace App\Domains\Beneficiaries\Enums;
+
+enum SocialStatus: string
+{
+    case SINGLE = 'single';
+    case MARRIED = 'married';
+    case DIVORCED = 'divorced';
+    case WIDOWED = 'widowed';
+    case SEPARATED = 'separated';
+
+    public function label(): string
+    {
+        return match ($this) {
+            self::SINGLE => 'أعزب/عزباء',
+            self::MARRIED => 'متزوج/متزوجة',
+            self::DIVORCED => 'مطلق/مطلقة',
+            self::WIDOWED => 'أرمل/أرملة',
+            self::SEPARATED => 'منفصل/منفصلة',
+        };
+    }
+}

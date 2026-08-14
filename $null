@@ -1,0 +1,8 @@
+Get-Content : Cannot find path 'C:\Users\ahmed\shadi\gen.php' because it does not exist.
+At line:1 char:2
++ (Get-Content 'gen.php' -Raw) ; echo ---; php -r echo 'arabic test: '  ...
++  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\ahmed\shadi\gen.php:String) [Get-Content], ItemNotFoundExcepti 
+   on
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+ 
